@@ -1,0 +1,185 @@
+{
+  "breakfast": [
+    {
+      "id": 1,
+      "name": "Sunny Morning Power",
+      "price": "Rs. 450",
+      "description": "Scrambled eggs with sautéed onions, potatoes and mushrooms. Toast served with butter and jam",
+      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "White Jumbo Omelet",
+      "price": "Rs. 420",
+      "description": "A two egg-white omelet accompanied with hash brown potatoes. Toast served with butter and jam",
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Yala Special Breakfast",
+      "price": "Rs. 650",
+      "description": "Seasonal fresh juice, Yala style pancake, eggs any style, hash brown potatoes, grilled tomato and a banana",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "Famous Eggs Benedict",
+      "price": "Rs. 580",
+      "description": "Sautéed ham & vegetables along with poached eggs topped with hollandaise sauce",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 5,
+      "name": "Full On Country Breakfast",
+      "price": "Rs. 520",
+      "description": "Seasonal juice, crispy bacon, two eggs any style & grilled tomato. Toast with butter and jam",
+      "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 6,
+      "name": "Nepali Simple Breakfast",
+      "price": "Rs. 380",
+      "description": "Nepali style omelet accompanied with seasonal fruits. Toast with butter and jam",
+      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+    }
+  ],
+  "lunch": [
+    {
+      "id": 7,
+      "name": "Chicken Timmur",
+      "price": "Rs. 680",
+      "description": "Tantalising diced chicken breast with fresh coriander, fenugreek and timmur (Nepali pepper). Served with mashed potato and salad",
+      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 8,
+      "name": "Yala Steak",
+      "price": "Rs. 850",
+      "description": "Tenderloin steak cooked to your desire with mushroom sauce. Served with sauteed potatoes and seasonal vegetables",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 9,
+      "name": "Tofu Butter Masala",
+      "price": "Rs. 520",
+      "description": "Fresh Nepali tofu marinated in authentic butter masala. Served with rice and a side salad",
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 10,
+      "name": "Sesame Seed Pasta",
+      "price": "Rs. 580",
+      "description": "Chicken or tofu with a delightful blend of mushrooms and sesame seeds",
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 11,
+      "name": "Mongolian BBQ",
+      "price": "Rs. 650",
+      "description": "Your choice of chicken, beef or tofu pan fried in our classic Mongolian sauce. Served with rice and salad",
+      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 12,
+      "name": "Grilled Fish Fillet",
+      "price": "Rs. 720",
+      "description": "Marinated grilled fish served with seasonal vegetables, sauteed or mashed potatoes and lemon sauce",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop"
+    }
+  ],
+  "beverages": [
+    {
+      "id": 13,
+      "name": "Espresso",
+      "price": "Rs. 120",
+      "description": "Single or double shot of freshly brewed Nepali coffee",
+      "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 14,
+      "name": "Cappuccino",
+      "price": "Rs. 180",
+      "description": "Rich espresso with steamed milk and foam",
+      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 15,
+      "name": "Café Latte",
+      "price": "Rs. 200",
+      "description": "Smooth espresso with steamed milk and light foam",
+      "image": "https://images.unsplash.com/photo-1561047029-3000c68339ca?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 16,
+      "name": "Nepali Masala Tea",
+      "price": "Rs. 80",
+      "description": "Traditional spiced tea with aromatic herbs and spices",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 17,
+      "name": "Honey Latte",
+      "price": "Rs. 220",
+      "description": "Sweet latte with natural honey and steamed milk",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 18,
+      "name": "Black Tea (Ilam)",
+      "price": "Rs. 60",
+      "description": "Premium black tea from Ilam, Nepal",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+    }
+  ],
+  "special": [
+    {
+      "id": 19,
+      "name": "Manaslu Signature Momo",
+      "price": "Rs. 450",
+      "description": "Traditional Nepali dumplings filled with spiced chicken or vegetables, served with tangy tomato chutney",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 20,
+      "name": "Himalayan Thukpa",
+      "price": "Rs. 380",
+      "description": "Authentic Tibetan noodle soup with fresh vegetables, herbs, and your choice of chicken or tofu",
+      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 21,
+      "name": "Woodside Special Burger",
+      "price": "Rs. 650",
+      "description": "Premium beef patty with Nepali spices, fresh lettuce, tomato, and our signature sauce on artisan bun",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 22,
+      "name": "Newari Platter",
+      "price": "Rs. 750",
+      "description": "Traditional Newari feast with choila, bara, aloo tama, and seasonal pickles served with beaten rice",
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 23,
+      "name": "Queens Fusion Pasta",
+      "price": "Rs. 620",
+      "description": "Italian pasta with Nepali twist - creamy tomato sauce with timmur and fresh herbs",
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 24,
+      "name": "Manaslu Dessert Delight",
+      "price": "Rs. 320",
+      "description": "Homemade rice pudding with cardamom, nuts, and a touch of saffron - a perfect ending to your meal",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 25,
+      "name": "Kodo ko Roti (Millet Bread)",
+      "price": "Rs. 280",
+      "description": "Traditional Nepali finger millet flour pancake - a nutritious and authentic staple. Made from kodo flour and water, cooked to golden perfection. Rich in protein, calcium, iron, phosphorus, and dietary fiber. Served with yogurt (Dahi), buttermilk (Mohi), preserves, or fresh fruits.",
+      "image": "/Kodo-roti.jpg"
+    }
+  ]
+}
