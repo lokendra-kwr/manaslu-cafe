@@ -142,7 +142,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Credits
 
-- Design inspired by [Yala Cafe](https://yalacafe.com/)
 - Images from Unsplash
 - Icons from Heroicons
 - Fonts from Google Fonts
