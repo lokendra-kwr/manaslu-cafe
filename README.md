@@ -1,6 +1,6 @@
 # Manaslu Cafe Website
 
-A modern, responsive React website for Manaslu Cafe, inspired by the beautiful design of Yala Cafe in Kathmandu, Nepal.
+A modern, responsive React website for Manaslu Cafe, 
 
 ## Location
 
