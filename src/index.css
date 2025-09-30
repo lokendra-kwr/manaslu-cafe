@@ -10,22 +10,170 @@
   body {
     font-family: 'Inter', sans-serif;
   }
+
+  /* Focus styles for better accessibility */
+  *:focus {
+    outline: 2px solid #DAA520;
+    outline-offset: 2px;
+  }
+
+  /* Skip link styles */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .btn-primary {
+      border: 2px solid #000;
+    }
+    
+    .btn-secondary {
+      border-width: 3px;
+    }
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-cafe-brown text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105;
+    @apply bg-cafe-brown text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base;
   }
   
   .btn-secondary {
-    @apply border-2 border-cafe-brown text-cafe-brown px-6 py-3 rounded-lg font-medium hover:bg-cafe-brown hover:text-white transition-all duration-300;
+    @apply border-2 border-cafe-brown text-cafe-brown px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium hover:bg-cafe-brown hover:text-white transition-all duration-300 text-sm sm:text-base;
   }
   
   .section-padding {
-    @apply py-16 px-4 sm:px-6 lg:px-8;
+    @apply py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 lg:px-8;
   }
   
   .container-custom {
     @apply max-w-7xl mx-auto;
+  }
+
+  /* Mobile-first responsive text utilities */
+  .text-responsive-xl {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  .text-responsive-base {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  /* Mobile grid utilities */
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6;
+  }
+
+  /* Mobile spacing utilities */
+  .space-y-mobile {
+    @apply space-y-4 sm:space-y-6 md:space-y-8;
+  }
+
+  /* Mobile padding utilities */
+  .p-mobile {
+    @apply p-3 sm:p-4 md:p-6;
+  }
+
+  /* Mobile margin utilities */
+  .mb-mobile {
+    @apply mb-4 sm:mb-6 md:mb-8;
+  }
+
+  /* Mobile flex utilities */
+  .flex-mobile-col {
+    @apply flex flex-col sm:flex-row;
+  }
+
+  /* Mobile text alignment */
+  .text-mobile-center {
+    @apply text-center sm:text-left;
+  }
+
+  /* Mobile width utilities */
+  .w-mobile-full {
+    @apply w-full sm:w-auto;
+  }
+
+  /* Mobile height utilities for hero sections */
+  .h-mobile-screen {
+    @apply h-screen min-h-[500px] sm:min-h-[600px] md:min-h-[700px];
+  }
+
+  /* Mobile image utilities */
+  .img-mobile-responsive {
+    @apply w-full h-32 sm:h-40 md:h-48 object-cover;
+  }
+
+  /* Mobile button group utilities */
+  .btn-group-mobile {
+    @apply flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto;
+  }
+
+  /* Mobile card utilities */
+  .card-mobile {
+    @apply bg-white rounded-lg sm:rounded-xl shadow-md sm:shadow-lg p-3 sm:p-4 md:p-6;
+  }
+
+  /* Mobile form utilities */
+  .input-mobile {
+    @apply w-full px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cafe-brown focus:border-transparent;
+  }
+
+  /* Mobile navigation utilities */
+  .nav-mobile {
+    @apply fixed w-full top-0 z-50 transition-all duration-300;
+  }
+
+  /* Mobile menu utilities */
+  .menu-mobile {
+    @apply lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 mt-2 rounded-lg shadow-lg mx-1 sm:mx-2;
+  }
+
+  /* Mobile search utilities */
+  .search-mobile {
+    @apply relative w-full;
+  }
+
+  /* Mobile category tabs */
+  .category-tabs-mobile {
+    @apply flex flex-wrap justify-center gap-1 sm:gap-2 mb-6 sm:mb-8 md:mb-12 px-2 sm:px-4;
+  }
+
+  /* Mobile category button */
+  .category-btn-mobile {
+    @apply px-2 py-1 sm:px-3 sm:py-2 md:px-6 md:py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm md:text-base;
   }
 }

@@ -48,29 +48,42 @@ const Navbar = () => {
     setIsSearchOpen(false);
   };
 
+  const handleMobileSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      // Scroll to menu section and trigger search
+      scrollToSection('menu');
+      // Store search query in sessionStorage for Menu component to use
+      sessionStorage.setItem('menuSearchQuery', searchQuery);
+      // Trigger a custom event to notify Menu component
+      window.dispatchEvent(new CustomEvent('menuSearch', { detail: searchQuery }));
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
-    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+    <nav className={`nav-mobile ${
       isScrolled 
-        ? 'bg-gradient-to-r from-white/95 to-gray-50/95 backdrop-blur-md shadow-lg py-3' 
-        : 'bg-gradient-to-r from-white/90 to-gray-50/90 backdrop-blur-sm py-4'
+        ? 'bg-gradient-to-r from-white/95 to-gray-50/95 backdrop-blur-md shadow-lg py-2 sm:py-3' 
+        : 'bg-gradient-to-r from-white/90 to-gray-50/90 backdrop-blur-sm py-3 sm:py-4'
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 sm:space-x-3">
               <img 
-                src="/maxresdefault.jpg" 
+                src="/logo1.png" 
                 alt="Manaslu Cafe Logo" 
                 className={`rounded-lg transition-all duration-300 ${
                   isScrolled 
-                    ? 'h-10 w-auto' 
-                    : 'h-12 w-auto'
+                    ? 'h-8 w-auto sm:h-10' 
+                    : 'h-10 w-auto sm:h-12'
                 }`}
               />
               <div className="hidden sm:block">
                 <h1 className={`font-bold transition-all duration-300 ${
-                  isScrolled ? 'text-lg text-gray-800' : 'text-xl text-gray-800'
+                  isScrolled ? 'text-base sm:text-lg text-gray-800' : 'text-lg sm:text-xl text-gray-800'
                 }`}>
                   Manaslu Cafe
                 </h1>
@@ -110,26 +123,29 @@ const Navbar = () => {
                 onClick={toggleSearch}
                 className="text-gray-700 hover:text-cafe-brown transition-colors duration-200 p-2 rounded-lg hover:bg-gray-100"
                 title="Search menu items"
+                aria-label="Search menu items"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
 
               {/* Search Dropdown */}
               {isSearchOpen && (
-                <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 py-4 z-50">
+                <div className="absolute top-full right-0 mt-2 w-72 sm:w-80 bg-white rounded-lg shadow-lg border border-gray-200 py-4 z-50">
                   <form onSubmit={handleSearch} className="px-4">
                     <div className="relative">
+                      <label htmlFor="desktop-search" className="sr-only">Search menu items</label>
                       <input
+                        id="desktop-search"
                         type="text"
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         placeholder="Search menu items..."
-                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cafe-brown focus:border-transparent text-sm"
+                        className="input-mobile pl-10 pr-4"
                         autoFocus
                       />
-                      <svg className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
                     </div>
@@ -158,9 +174,11 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-cafe-brown transition-colors duration-200 focus:outline-none"
+              className="text-gray-700 hover:text-cafe-brown transition-colors duration-200 focus:outline-none p-2"
+              aria-label="Toggle mobile menu"
+              aria-expanded={isMenuOpen}
             >
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -173,45 +191,47 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 mt-2 rounded-lg shadow-lg mx-2">
-            <div className="px-6 pt-6 pb-8 space-y-4">
+          <div className="menu-mobile">
+            <div className="px-4 sm:px-6 pt-4 sm:pt-6 pb-6 sm:pb-8 space-y-4">
               {/* Mobile Search */}
               <div className="mb-4">
-                <form onSubmit={handleSearch} className="relative">
+                <form onSubmit={handleMobileSearch} className="search-mobile">
+                  <label htmlFor="mobile-search" className="sr-only">Search menu items</label>
                   <input
+                    id="mobile-search"
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Search menu items..."
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cafe-brown focus:border-transparent"
+                    className="input-mobile pl-10 pr-4"
                   />
-                  <svg className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </form>
               </div>
 
               {/* Mobile Navigation */}
-              <div className="space-y-1">
+              <nav className="space-y-1" role="navigation" aria-label="Mobile navigation">
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="block px-4 py-3 text-gray-700 hover:text-cafe-brown hover:bg-gray-50 rounded-lg w-full text-left transition-all duration-200 font-medium"
+                  className="block px-3 sm:px-4 py-2 sm:py-3 text-gray-700 hover:text-cafe-brown hover:bg-gray-50 rounded-lg w-full text-left transition-all duration-200 font-medium text-sm sm:text-base"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection('menu')}
-                  className="block px-4 py-3 text-gray-700 hover:text-cafe-brown hover:bg-gray-50 rounded-lg w-full text-left transition-all duration-200 font-medium"
+                  className="block px-3 sm:px-4 py-2 sm:py-3 text-gray-700 hover:text-cafe-brown hover:bg-gray-50 rounded-lg w-full text-left transition-all duration-200 font-medium text-sm sm:text-base"
                 >
                   Menu
                 </button>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="block px-4 py-3 text-gray-700 hover:text-cafe-brown hover:bg-gray-50 rounded-lg w-full text-left transition-all duration-200 font-medium"
+                  className="block px-3 sm:px-4 py-2 sm:py-3 text-gray-700 hover:text-cafe-brown hover:bg-gray-50 rounded-lg w-full text-left transition-all duration-200 font-medium text-sm sm:text-base"
                 >
                   Contact
                 </button>
-              </div>
+              </nav>
             </div>
           </div>
         )}

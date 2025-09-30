@@ -62,41 +62,41 @@ const Reviews = () => {
   };
 
   return (
-    <section id="reviews" className="section-padding bg-cafe-cream">
+    <section id="reviews" className="section-padding bg-cafe-cream" aria-labelledby="reviews-heading">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-cafe-brown mb-6 font-serif">
+        <div className="text-center mb-mobile">
+          <h2 id="reviews-heading" className="text-responsive-xl font-bold text-cafe-brown mb-4 sm:mb-6 font-serif">
             What Our Customers Say
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-responsive-base text-gray-600 max-w-3xl mx-auto">
             Don't just take our word for it! Here's what our amazing customers have to say about their experience at Manaslu Cafe.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-3 sm:px-4">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="bg-white rounded-xl p-4 md:p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="card-mobile hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="flex items-center mb-4">
-                <div className="flex space-x-1 mr-4">
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="flex space-x-1 mr-3 sm:mr-4">
                   {renderStars(review.rating)}
                 </div>
-                <span className="text-sm text-gray-500">{review.date}</span>
+                <span className="text-xs sm:text-sm text-gray-500">{review.date}</span>
               </div>
               
-              <p className="text-gray-700 leading-relaxed mb-4 italic">
+              <p className="text-gray-700 leading-relaxed mb-3 sm:mb-4 italic text-sm sm:text-base">
                 "{review.comment}"
               </p>
               
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-cafe-brown rounded-full flex items-center justify-center text-white font-bold text-sm mr-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-cafe-brown rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm mr-2 sm:mr-3">
                   {review.name.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-cafe-brown">{review.name}</h4>
-                  <p className="text-sm text-gray-500">Verified Customer</p>
+                  <h4 className="font-semibold text-cafe-brown text-sm sm:text-base">{review.name}</h4>
+                  <p className="text-xs sm:text-sm text-gray-500">Verified Customer</p>
                 </div>
               </div>
             </div>
@@ -104,14 +104,14 @@ const Reviews = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
-          <h3 className="text-2xl font-bold text-cafe-brown mb-4 font-serif">
+        <div className="text-center mt-12 sm:mt-16 px-3 sm:px-4">
+          <h3 className="text-xl sm:text-2xl font-bold text-cafe-brown mb-3 sm:mb-4 font-serif">
             Ready to Experience the Magic?
           </h3>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
             Join our satisfied customers and discover why Manaslu Cafe is the talk of Woodside!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
+          <div className="btn-group-mobile justify-center">
             <button 
               onClick={() => {
                 const element = document.getElementById('menu');
@@ -119,7 +119,8 @@ const Reviews = () => {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+              className="btn-primary w-mobile-full"
+              aria-label="View our menu"
             >
               View Our Menu
             </button>
@@ -130,7 +131,8 @@ const Reviews = () => {
                   element.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
-              className="text-cafe-brown hover:text-cafe-orange font-medium px-6 sm:px-8 py-3 sm:py-4 border border-cafe-brown rounded-lg hover:bg-cafe-brown hover:text-white transition-all duration-300 w-full sm:w-auto"
+              className="text-cafe-brown hover:text-cafe-orange font-medium px-4 sm:px-6 py-2 sm:py-3 border border-cafe-brown rounded-lg hover:bg-cafe-brown hover:text-white transition-all duration-300 w-mobile-full"
+              aria-label="Visit our cafe today"
             >
               Visit Us Today
             </button>

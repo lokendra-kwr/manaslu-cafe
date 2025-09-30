@@ -59,33 +59,34 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="section-padding bg-white">
+    <section id="gallery" className="section-padding bg-white" aria-labelledby="gallery-heading">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-cafe-brown mb-6 font-serif">
+        <div className="text-center mb-mobile">
+          <h2 id="gallery-heading" className="text-responsive-xl font-bold text-cafe-brown mb-4 sm:mb-6 font-serif">
             Gallery
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-responsive-base text-gray-600 max-w-3xl mx-auto">
             Take a look at our beautiful cafe, delicious food, and the warm atmosphere 
             that makes Manaslu Cafe the most peaceful cafe in Kathmandu.
           </p>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-3 sm:px-4">
           {galleryImages.map((image) => (
             <div
               key={image.id}
-              className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="relative group overflow-hidden rounded-lg sm:rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-48 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                  <h3 className="text-white text-xl font-bold font-serif mb-2">
+                  <h3 className="text-white text-lg sm:text-xl font-bold font-serif mb-2">
                     {image.title}
                   </h3>
                 </div>
@@ -95,34 +96,34 @@ const Gallery = () => {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 text-center">
-          <div className="bg-cafe-cream rounded-xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-cafe-brown mb-4 font-serif">
+        <div className="mt-12 sm:mt-16 text-center px-3 sm:px-4">
+          <div className="bg-cafe-cream rounded-lg sm:rounded-xl p-6 sm:p-8 max-w-4xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-bold text-cafe-brown mb-3 sm:mb-4 font-serif">
               Dine Outside or Eat In
             </h3>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
               Manaslu Cafe has a lovely mini garden that gets the warm sun every morning 
               which our guests truly enjoy. Inside we have well spaced tables, a coffee bar, 
               bathroom facilities & even quiet zones for people looking to chill out with a book.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <div className="flex items-center justify-center text-cafe-brown">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="font-medium">Free WiFi</span>
+                <span className="font-medium text-sm sm:text-base">Free WiFi</span>
               </div>
               <div className="flex items-center justify-center text-cafe-brown">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="font-medium">Outdoor Seating</span>
+                <span className="font-medium text-sm sm:text-base">Outdoor Seating</span>
               </div>
               <div className="flex items-center justify-center text-cafe-brown">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="font-medium">Quiet Zones</span>
+                <span className="font-medium text-sm sm:text-base">Quiet Zones</span>
               </div>
             </div>
           </div>
