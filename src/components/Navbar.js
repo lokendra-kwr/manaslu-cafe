@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,38 +26,6 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  const toggleSearch = () => {
-    setIsSearchOpen(!isSearchOpen);
-    if (!isSearchOpen) {
-      setSearchQuery('');
-    }
-  };
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      // Scroll to menu section and trigger search
-      scrollToSection('menu');
-      // Store search query in sessionStorage for Menu component to use
-      sessionStorage.setItem('menuSearchQuery', searchQuery);
-      // Trigger a custom event to notify Menu component
-      window.dispatchEvent(new CustomEvent('menuSearch', { detail: searchQuery }));
-    }
-    setIsSearchOpen(false);
-  };
-
-  const handleMobileSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      // Scroll to menu section and trigger search
-      scrollToSection('menu');
-      // Store search query in sessionStorage for Menu component to use
-      sessionStorage.setItem('menuSearchQuery', searchQuery);
-      // Trigger a custom event to notify Menu component
-      window.dispatchEvent(new CustomEvent('menuSearch', { detail: searchQuery }));
-    }
-    setIsMenuOpen(false);
-  };
 
   return (
     <nav className={`nav-mobile ${
@@ -117,57 +83,6 @@ const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cafe-brown transition-all duration-200 group-hover:w-full"></span>
             </button>
 
-            {/* Search Button */}
-            <div className="relative">
-              <button
-                onClick={toggleSearch}
-                className="text-gray-700 hover:text-cafe-brown transition-colors duration-200 p-2 rounded-lg hover:bg-gray-100"
-                title="Search menu items"
-                aria-label="Search menu items"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
-
-              {/* Search Dropdown */}
-              {isSearchOpen && (
-                <div className="absolute top-full right-0 mt-2 w-72 sm:w-80 bg-white rounded-lg shadow-lg border border-gray-200 py-4 z-50">
-                  <form onSubmit={handleSearch} className="px-4">
-                    <div className="relative">
-                      <label htmlFor="desktop-search" className="sr-only">Search menu items</label>
-                      <input
-                        id="desktop-search"
-                        type="text"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        placeholder="Search menu items..."
-                        className="input-mobile pl-10 pr-4"
-                        autoFocus
-                      />
-                      <svg className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                    </div>
-                    <div className="mt-3 flex justify-end space-x-2">
-                      <button
-                        type="button"
-                        onClick={toggleSearch}
-                        className="px-3 py-1 text-sm text-gray-600 hover:text-gray-800 transition-colors duration-200"
-                      >
-                        Cancel
-                      </button>
-                      <button
-                        type="submit"
-                        className="px-4 py-1 bg-cafe-brown text-white text-sm rounded-lg hover:bg-cafe-brown/90 transition-colors duration-200"
-                      >
-                        Search
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              )}
-            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -193,23 +108,6 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="menu-mobile">
             <div className="px-4 sm:px-6 pt-4 sm:pt-6 pb-6 sm:pb-8 space-y-4">
-              {/* Mobile Search */}
-              <div className="mb-4">
-                <form onSubmit={handleMobileSearch} className="search-mobile">
-                  <label htmlFor="mobile-search" className="sr-only">Search menu items</label>
-                  <input
-                    id="mobile-search"
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search menu items..."
-                    className="input-mobile pl-10 pr-4"
-                  />
-                  <svg className="absolute left-3 top-3 w-4 h-4 sm:w-5 sm:h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </form>
-              </div>
 
               {/* Mobile Navigation */}
               <nav className="space-y-1" role="navigation" aria-label="Mobile navigation">
