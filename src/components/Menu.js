@@ -2,14 +2,24 @@ import React, { useState, useMemo, useCallback } from 'react';
 import menuData from '../data/menuData.json';
 
 const Menu = () => {
-  const [activeCategory, setActiveCategory] = useState('breakfast');
+  const [activeCategory, setActiveCategory] = useState('drinks');
   const [selectedItem, setSelectedItem] = useState(null);
 
   const categories = [
-    { key: 'breakfast', label: 'Breakfast' },
-    { key: 'lunch', label: 'Lunch & Dinner' },
-    { key: 'beverages', label: 'Coffee & Tea' },
-    { key: 'special', label: 'Our Authentic Food' }
+    { key: 'drinks', label: 'Drinks' },
+    { key: 'special_soup', label: 'Special Soup' },
+    { key: 'breads', label: 'Breads' },
+    { key: 'breakfast_set', label: 'Breakfast Set' },
+    { key: 'non_veg_appetizers', label: 'Non-Veg Appetizers' },
+    { key: 'veggie_appetizers', label: 'Veggie Appetizers' },
+    { key: 'momo_dumplings', label: 'MOMO/Dumplings' },
+    { key: 'chowmein', label: 'Chowmein' },
+    { key: 'curry', label: 'Curry' },
+    { key: 'thukpa', label: 'Thukpa' },
+    { key: 'dal_bhat', label: 'Dal/Bhat' },
+    { key: 'dhido_set', label: 'Dhido Set' },
+    { key: 'japanese_food', label: 'Japanese Food' },
+    { key: 'fried_rice', label: 'Fried Rice' }
   ];
 
   const filteredMenu = useMemo(() => {
@@ -78,8 +88,8 @@ const Menu = () => {
           ))}
         </div>
 
-        {/* Special Title for Our Authentic Food */}
-        {activeCategory === 'special' && (
+        {/* Special Title for Authentic Nepali Food */}
+        {(activeCategory === 'dal_bhat' || activeCategory === 'dhido_set' || activeCategory === 'thukpa' || activeCategory === 'curry' || activeCategory === 'momo_dumplings' || activeCategory === 'chowmein') && (
           <div className="text-center mb-8 sm:mb-12">
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4" style={{ color: '#f4d7a1', fontFamily: 'Georgia, serif' }}>
               Our Organic and Health

@@ -39,12 +39,12 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex items-center space-x-2 sm:space-x-3">
               <img 
-                src="/logo1.png" 
+                src="/orginallogo.png" 
                 alt="Manaslu Cafe Logo" 
-                className={`rounded-lg transition-all duration-300 ${
+                className={`transition-all duration-300 ${
                   isScrolled 
-                    ? 'h-8 w-auto sm:h-10' 
-                    : 'h-10 w-auto sm:h-12'
+                    ? 'h-12 w-auto sm:h-16' 
+                    : 'h-16 w-auto sm:h-20'
                 }`}
               />
               <div className="hidden sm:block">
