@@ -20,7 +20,7 @@ const Footer = () => {
               </p>
               <div className="flex space-x-3 sm:space-x-4 justify-center md:justify-start">
                 <a
-                  href="https://facebook.com/manaslucafe"
+                  href="https://www.facebook.com/Manaslucafe/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-cafe-gold rounded-lg flex items-center justify-center text-cafe-brown hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105"
@@ -31,7 +31,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/namaie_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  href="https://www.instagram.com/manaslucafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-cafe-gold rounded-lg flex items-center justify-center text-cafe-brown hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105"
@@ -104,8 +104,7 @@ const Footer = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <div className="text-sm sm:text-base">
-                    <p>3906-64st Woodside</p>
-                    <p>Woodside, NY 11377, United States</p>
+                    <p>3906 1/2 64th St, Woodside, NY 11377, United States</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 justify-center md:justify-start">

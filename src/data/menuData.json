@@ -4,145 +4,123 @@
       "id": 1,
       "name": "Chicken Soup",
       "price": "$5.99",
-      "description": "green beans, corn, carrot & cilantro",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Green beans, corn, carrot & cilantro"
     },
     {
       "id": 2,
       "name": "Mushroom Soup",
       "price": "$6.99",
-      "description": "green beans, corn, carrot & cilantro",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Green beans, corn, carrot & cilantro"
     },
     {
       "id": 3,
       "name": "Vegetable Soup",
       "price": "$5.99",
-      "description": "bakchoy, black mushroom, green beans, corn, carrot & cilantro",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Bakchoy, black mushroom, green beans, corn, carrot & cilantro"
     },
     {
       "id": 4,
-      "name": "Hot and Sour Soup",
+      "name": "Hot And Sour Soup",
       "price": "$5.99",
-      "description": "mixed veg, chilly & scallion",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Mixed veg, chilly & scallion"
     },
     {
       "id": 5,
       "name": "Noodle Soup",
       "price": "$5.99",
-      "description": "black mushroom, bakchoy, carrot & cilantro",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Black mushroom, bakchoy, carrot & cilantro"
     },
     {
       "id": 6,
       "name": "Egg Drop Soup",
       "price": "$6.99",
-      "description": "green beans, corn, carrot & cilantro",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Green beans, corn, carrot & cilantro"
     },
     {
       "id": 7,
-      "name": "Tsurpi Soup (Tsamthuk)",
+      "name": "Tsurpi Soup (tsamthuk)",
       "price": "$5.99",
-      "description": "hardened cheese, potato & spinach with wheat flour soup",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Hardened cheese, potato & spinach with wheat flour soup"
     }
   ],
-  "breads": [
+  "breakfast_set": [
     {
       "id": 8,
-      "name": "Chapati (2 pcs)",
+      "name": "Chapati (2 Pcs)",
       "price": "$2.99",
-      "description": "Traditional Nepali flatbread",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Traditional nepali flatbread"
     },
     {
       "id": 9,
-      "name": "Tibetan Bread (2 pcs)",
+      "name": "Tibetan Bread (2 Pcs)",
       "price": "$2.99",
-      "description": "Traditional Tibetan bread",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Traditional tibetan bread"
     },
     {
       "id": 10,
       "name": "Pancakes",
       "price": "$2.00",
-      "description": "Fresh pancakes",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+      "description": "Fresh pancakes"
     },
     {
       "id": 11,
-      "name": "Fapar ko Roti",
+      "name": "Fapar Ko Roti",
       "price": "$2.99",
-      "description": "Buckwheat flour bread",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Buckwheat flour bread"
     },
     {
       "id": 12,
-      "name": "Kodo ko Roti",
+      "name": "Kodo Ko Roti",
       "price": "$2.99",
-      "description": "Millet flour bread",
-      "image": "/Kodo-roti.jpg"
+      "description": "Millet flour bread"
     },
     {
       "id": 13,
-      "name": "Sel Roti (2 pcs)",
+      "name": "Sel Roti (2 Pcs)",
       "price": "$2.99",
-      "description": "Traditional Nepali ring-shaped bread",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Traditional nepali ring-shaped bread"
     },
     {
       "id": 14,
       "name": "Ting Momo",
       "price": "$2.00",
-      "description": "Traditional Tibetan bread",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+      "description": "Traditional tibetan bread"
     },
     {
       "id": 15,
       "name": "Plain Rice",
       "price": "$1.99",
-      "description": "Steamed white rice",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
-    }
-  ],
-  "breakfast_set": [
+      "description": "Steamed white rice"
+    },
     {
       "id": 16,
-      "name": "Fapar Roti (Buckwheat Flour)",
+      "name": "Fapar Roti (buckwheat Flour)",
       "price": "$11.00",
-      "description": "Choice of eggs and tea, simi jhol, steamed veggies, and pickle",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Choice of eggs and tea, simi jhol, steamed veggies, and pickle"
     },
     {
       "id": 17,
-      "name": "Kodo Roti (Millet Flour)",
+      "name": "Kodo Roti (millet Flour)",
       "price": "$11.00",
-      "description": "Choice of eggs and tea, simi jhol, steamed veggies, and pickle",
-      "image": "/Kodo-roti.jpg"
+      "description": "Choice of eggs and tea, simi jhol, steamed veggies, and pickle"
     },
     {
       "id": 18,
       "name": "Chapati (2pcs)",
       "price": "$11.00",
-      "description": "Boiled egg, aalu chana, simi beans, pickle, and choice of tea",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Boiled egg, aalu chana, simi beans, pickle, and choice of tea"
     },
     {
       "id": 19,
       "name": "Tibetan Bread (2pcs)",
       "price": "$11.00",
-      "description": "Eggs any style, aalu tama, beans, pickle, and choice of tea",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Eggs any style, aalu tama, beans, pickle, and choice of tea"
     },
     {
       "id": 20,
       "name": "Tsampa Thukpa",
       "price": "$6.00",
-      "description": "Beans, churpi, and veggies",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Beans, churpi, and veggies"
     }
   ],
   "non_veg_appetizers": [
@@ -150,71 +128,61 @@
       "id": 21,
       "name": "Chicken Chilly",
       "price": "$6.99",
-      "description": "onion, tomato, green pepper",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Onion, tomato, green pepper"
     },
     {
       "id": 22,
       "name": "Beef Chilly | Shapta",
       "price": "$6.99",
-      "description": "onion, tomato, green pepper",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Onion, tomato, green pepper"
     },
     {
       "id": 23,
       "name": "Chicken Wings",
       "price": "$6.99",
-      "description": "cornflour marinated wings, eggs, sauce",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Cornflour marinated wings, eggs, sauce"
     },
     {
       "id": 24,
       "name": "Pork Chilly",
       "price": "$5.99",
-      "description": "onion, tomato, green pepper",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Onion, tomato, green pepper"
     },
     {
       "id": 25,
       "name": "Steam Gyuma",
       "price": "$8.99",
-      "description": "Traditional Tibetan sausage",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Traditional tibetan sausage"
     },
     {
       "id": 26,
       "name": "Pan Fried Gyuma",
       "price": "$9.99",
-      "description": "Pan-fried Tibetan sausage",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Pan-fried tibetan sausage"
     },
     {
       "id": 27,
-      "name": "Dhopa Khacha (Beef Tripe)",
+      "name": "Dhopa Khacha (beef Tripe)",
       "price": "$6.99",
-      "description": "Traditional beef tripe dish",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Traditional beef tripe dish"
     },
     {
       "id": 28,
       "name": "Chicken Lollipop",
       "price": "$6.99",
-      "description": "Crispy chicken lollipops",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Crispy chicken lollipops"
     },
     {
       "id": 29,
-      "name": "Shabhale Chicken/Beef (2pcs)",
+      "name": "Shabhale Chicken/beef (2pcs)",
       "price": "$6.99",
-      "description": "Traditional stuffed bread",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Traditional stuffed bread"
     },
     {
       "id": 30,
-      "name": "Chicken/Beef with Bakchoy",
+      "name": "Chicken/beef With Bakchoy",
       "price": "$7.99",
-      "description": "Stir-fried with fresh bakchoy",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Stir-fried with fresh bakchoy"
     }
   ],
   "veggie_appetizers": [
@@ -222,115 +190,99 @@
       "id": 31,
       "name": "French Fries",
       "price": "$4.99",
-      "description": "Crispy golden french fries",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Crispy golden french fries"
     },
     {
       "id": 32,
       "name": "Spring Roll",
       "price": "$6.00",
-      "description": "Fresh vegetable spring rolls",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Fresh vegetable spring rolls"
     },
     {
       "id": 33,
       "name": "Bok Choy",
       "price": "$3.99",
-      "description": "Fresh bok choy stir-fry",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Fresh bok choy stir-fry"
     },
     {
       "id": 34,
       "name": "Mala Tofu",
       "price": "$5.00",
-      "description": "sichuan sauce, timur powder",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Sichuan sauce, timur powder"
     },
     {
       "id": 35,
       "name": "Manaslu Aaloo",
       "price": "$5.00",
-      "description": "sliced bbq potatoes mixed with timmur and mild spicy",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Sliced bbq potatoes mixed with timmur and mild spicy"
     },
     {
       "id": 36,
       "name": "Finger Chips",
       "price": "$6.00",
-      "description": "Crispy finger chips",
-      "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop"
+      "description": "Crispy finger chips"
     },
     {
       "id": 37,
       "name": "Aaloo Sisi",
       "price": "$4.99",
-      "description": "garlic, timmur, red pepper",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Garlic, timmur, red pepper"
     },
     {
       "id": 38,
       "name": "Chau Chau Sadeko",
       "price": "$5.99",
-      "description": "Spicy noodle salad",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Spicy noodle salad"
     },
     {
       "id": 39,
       "name": "Chatpate",
       "price": "$5.99",
-      "description": "Spicy mixed snack",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Spicy mixed snack"
     },
     {
       "id": 40,
       "name": "Yellow Laphing",
       "price": "$6.99",
-      "description": "Traditional Tibetan cold noodle dish",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Traditional tibetan cold noodle dish"
     },
     {
       "id": 41,
       "name": "Pani Puri",
       "price": "$5.99",
-      "description": "Crispy puri with spiced water",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Crispy puri with spiced water"
     }
   ],
   "curry": [
     {
       "id": 42,
-      "name": "Aaloo Dum (Potato)",
+      "name": "Aaloo Dum (potato)",
       "price": "$5.99",
-      "description": "garlic, onion, tomato, choice of spicy & cilantro",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Garlic, onion, tomato, choice of spicy & cilantro"
     },
     {
       "id": 43,
       "name": "Bhuteko Chana",
       "price": "$4.99",
-      "description": "gram, garlic, onion, tomato, choice of spicy & cilantro",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Gram, garlic, onion, tomato, choice of spicy & cilantro"
     },
     {
       "id": 44,
-      "name": "Chana+Aaloo",
+      "name": "Chana+aaloo",
       "price": "$5.99",
-      "description": "garlic, onion, tomato, choice of spicy & cilantro",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Garlic, onion, tomato, choice of spicy & cilantro"
     },
     {
       "id": 45,
       "name": "Simi",
       "price": "$5.99",
-      "description": "light fried green beans, garlic, onion, tomato, choice of spicy & cilantro",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Light fried green beans, garlic, onion, tomato, choice of spicy & cilantro"
     },
     {
       "id": 46,
       "name": "Sukuti",
       "price": "$6.99",
-      "description": "mild spicy fried beef",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Mild spicy fried beef"
     }
   ],
   "thukpa": [
@@ -338,80 +290,69 @@
       "id": 47,
       "name": "Veg Thentuk",
       "price": "$9.99",
-      "description": "white flour dough, radish, bakchoy, cabbage, carrot",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "White flour dough, radish, bakchoy, cabbage, carrot"
     },
     {
       "id": 48,
       "name": "Thentuk Beef",
       "price": "$10.99",
-      "description": "white flour dough, radish, bakchoy, cabbage, carrot",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "White flour dough, radish, bakchoy, cabbage, carrot"
     },
     {
       "id": 49,
       "name": "Thentuk Chicken",
       "price": "$10.99",
-      "description": "white flour dough, bakchoy, cabbage, carrot",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "White flour dough, bakchoy, cabbage, carrot"
     },
     {
       "id": 50,
       "name": "Gyathuk Veggie",
       "price": "$9.99",
-      "description": "mushroom, cabbage, carrot, bakchoy",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Mushroom, cabbage, carrot, bakchoy"
     },
     {
       "id": 51,
       "name": "Gyathuk Beef",
       "price": "$10.99",
-      "description": "cabbage, carrot, bakchoy",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Cabbage, carrot, bakchoy"
     },
     {
       "id": 52,
       "name": "Gyathuk Chicken",
       "price": "$10.99",
-      "description": "cabbage, carrot, bakchoy",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Cabbage, carrot, bakchoy"
     }
   ],
   "dal_bhat": [
     {
       "id": 53,
-      "name": "Dal/Bhat Vegetable",
+      "name": "Dal/bhat Vegetable",
       "price": "$10.99",
-      "description": "rajma gravy, mixed curry, spinach, papad, pickle",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
+      "description": "Rajma gravy, mixed curry, spinach, papad, pickle"
     },
     {
       "id": 54,
-      "name": "Dal/Bhat Beef",
+      "name": "Dal/bhat Beef",
       "price": "$11.99",
-      "description": "mixed curry, spinach, rajma gravy, papad, pickle",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
+      "description": "Mixed curry, spinach, rajma gravy, papad, pickle"
     },
     {
       "id": 55,
-      "name": "Dal/Bhat Chicken",
+      "name": "Dal/bhat Chicken",
       "price": "$11.99",
-      "description": "mixed curry, spinach, rajma gravy, papad, pickle",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
+      "description": "Mixed curry, spinach, rajma gravy, papad, pickle"
     },
     {
       "id": 56,
-      "name": "Dal/Bhat Sukuti",
+      "name": "Dal/bhat Sukuti",
       "price": "$12.99",
-      "description": "mixed curry, spinach, rajma gravy, papad, pickle",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
+      "description": "Mixed curry, spinach, rajma gravy, papad, pickle"
     },
     {
       "id": 57,
-      "name": "Dal/Bhat Mutton",
+      "name": "Dal/bhat Mutton",
       "price": "$12.99",
-      "description": "mixed curry, spinach, rajma gravy, papad, pickle",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop"
+      "description": "Mixed curry, spinach, rajma gravy, papad, pickle"
     }
   ],
   "dhido_set": [
@@ -419,22 +360,19 @@
       "id": 58,
       "name": "Chicken Dhido",
       "price": "$10.99",
-      "description": "gravy chicken, spinach, pickle. Choice of flour (Kodo, Fapar, Makai)",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Gravy chicken, spinach, pickle. choice of flour (kodo, fapar, makai)"
     },
     {
       "id": 59,
       "name": "Mutton Dhido",
       "price": "$11.99",
-      "description": "gravy goat, spinach, pickle. Choice of flour (Kodo, Fapar, Makai)",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Gravy goat, spinach, pickle. choice of flour (kodo, fapar, makai)"
     },
     {
       "id": 60,
       "name": "Manaslu Shosha Dhido",
       "price": "$10.99",
-      "description": "shosha, spinach, yogurt. Shosha: Milk skin/film(shosha) with dried chilly, timmur & clove mixed sauce. Choice of flour (Kodo, Fapar, Makai)",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Shosha, spinach, yogurt. shosha: milk skin/film(shosha) with dried chilly, timmur & clove mixed sauce. choice of flour (kodo, fapar, makai)"
     }
   ],
   "japanese_food": [
@@ -442,50 +380,43 @@
       "id": 61,
       "name": "Salmon Teriyaki",
       "price": "$13.99",
-      "description": "Served with steamed broccoli, carrot, rice, and soup",
-      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop"
+      "description": "Served with steamed broccoli, carrot, rice, and soup"
     },
     {
       "id": 62,
       "name": "Chicken Teriyaki",
       "price": "$12.99",
-      "description": "Served with steamed broccoli, carrot, rice, and soup",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Served with steamed broccoli, carrot, rice, and soup"
     },
     {
       "id": 63,
       "name": "Beef Teriyaki",
       "price": "$13.99",
-      "description": "Served with steamed broccoli, carrot, rice, and soup",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Served with steamed broccoli, carrot, rice, and soup"
     },
     {
       "id": 64,
       "name": "Veg Teriyaki",
       "price": "$12.99",
-      "description": "Served with mushroom, carrot, string beans, and miso soup",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Served with mushroom, carrot, string beans, and miso soup"
     },
     {
       "id": 65,
       "name": "Chicken Katsu",
       "price": "$12.99",
-      "description": "Served with white rice, miso soup, steamed broccoli, and carrot",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Served with white rice, miso soup, steamed broccoli, and carrot"
     },
     {
       "id": 66,
       "name": "Pork Katsu",
       "price": "$12.99",
-      "description": "Served with white rice, miso soup, steamed broccoli, and carrot",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Served with white rice, miso soup, steamed broccoli, and carrot"
     },
     {
       "id": 67,
       "name": "Fish Katsu",
       "price": "$12.99",
-      "description": "Served with white rice, miso soup, steamed broccoli, and carrot",
-      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop"
+      "description": "Served with white rice, miso soup, steamed broccoli, and carrot"
     }
   ],
   "fried_rice": [
@@ -493,29 +424,25 @@
       "id": 68,
       "name": "Vegetable Fried Rice",
       "price": "$8.99",
-      "description": "green beans, carrot, spinach, green pepper",
-      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop"
+      "description": "Green beans, carrot, spinach, green pepper"
     },
     {
       "id": 69,
       "name": "Egg Fried Rice",
       "price": "$8.99",
-      "description": "Fresh egg fried rice",
-      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+      "description": "Fresh egg fried rice"
     },
     {
       "id": 70,
-      "name": "Beef/Chicken Fried Rice",
+      "name": "Beef/chicken Fried Rice",
       "price": "$10.99",
-      "description": "green beans, carrot, spinach",
-      "image": "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop"
+      "description": "Green beans, carrot, spinach"
     },
     {
       "id": 71,
       "name": "Mix Fried Rice",
       "price": "$11.99",
-      "description": "chicken, beef, egg, green beans, carrot, spinach",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=300&fit=crop"
+      "description": "Chicken, beef, egg, green beans, carrot, spinach"
     }
   ],
   "drinks": [
@@ -523,127 +450,109 @@
       "id": 72,
       "name": "Black Tea",
       "price": "$1.00",
-      "description": "Traditional black tea",
-      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+      "description": "Traditional black tea"
     },
     {
       "id": 73,
       "name": "Milk Tea",
       "price": "$1.50",
-      "description": "Creamy milk tea",
-      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+      "description": "Creamy milk tea"
     },
     {
       "id": 74,
       "name": "Masala Tea",
       "price": "$2.00",
-      "description": "Spiced masala tea",
-      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+      "description": "Spiced masala tea"
     },
     {
       "id": 75,
       "name": "Mint Tea",
       "price": "$2.00",
-      "description": "Refreshing mint tea",
-      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+      "description": "Refreshing mint tea"
     },
     {
       "id": 76,
       "name": "Black Coffee Regular",
       "price": "$2.00",
-      "description": "Freshly brewed black coffee",
-      "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop"
+      "description": "Freshly brewed black coffee"
     },
     {
       "id": 77,
       "name": "Milk Coffee",
       "price": "$2.00",
-      "description": "Coffee with milk",
-      "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop"
+      "description": "Coffee with milk"
     },
     {
       "id": 78,
       "name": "Americano",
       "price": "$2.50",
-      "description": "Espresso with hot water",
-      "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop"
+      "description": "Espresso with hot water"
     },
     {
       "id": 79,
-      "name": "Cafe Latte/Cappuccino",
+      "name": "Cafe Latte/cappuccino",
       "price": "$2.99",
-      "description": "Espresso with steamed milk",
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop"
+      "description": "Espresso with steamed milk"
     },
     {
       "id": 80,
       "name": "Lemon Ginger Honey",
       "price": "$2.00",
-      "description": "Soothing lemon ginger honey tea",
-      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop"
+      "description": "Soothing lemon ginger honey tea"
     },
     {
       "id": 81,
-      "name": "Soda (Coke, Ginger Ale, Sprite)",
+      "name": "Soda (coke, Ginger Ale, Sprite)",
       "price": "$2.00",
-      "description": "Choice of soft drinks",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Choice of soft drinks"
     },
     {
       "id": 82,
       "name": "Red Bull",
       "price": "$2.99",
-      "description": "Energy drink",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Energy drink"
     },
     {
       "id": 83,
       "name": "Apple Juice",
-      "price": "$2.99",
-      "description": "Fresh apple juice",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "price": "$2",
+      "description": "Fresh apple juice"
     },
     {
       "id": 84,
       "name": "Mango Juice",
       "price": "$2.99",
-      "description": "Fresh mango juice",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Fresh mango juice"
     },
     {
       "id": 85,
       "name": "Orange Juice",
       "price": "$2.99",
-      "description": "Fresh orange juice",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Fresh orange juice"
     },
     {
       "id": 86,
       "name": "Plain Lassi",
       "price": "$2.99",
-      "description": "Traditional yogurt drink",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Traditional yogurt drink"
     },
     {
       "id": 87,
       "name": "Banana Lassi",
       "price": "$3.50",
-      "description": "Banana flavored lassi",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Banana flavored lassi"
     },
     {
       "id": 88,
       "name": "Mango Lassi",
       "price": "$3.50",
-      "description": "Mango flavored lassi",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Mango flavored lassi"
     },
     {
       "id": 89,
       "name": "Lemonade",
       "price": "$1.99",
-      "description": "Fresh lemonade",
-      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+      "description": "Fresh lemonade"
     }
   ],
   "momo_dumplings": [
@@ -651,78 +560,67 @@
       "id": 90,
       "name": "Steam Momo Veggie",
       "price": "$9.99",
-      "description": "Traditional steamed vegetable dumplings",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Traditional steamed vegetable dumplings"
     },
     {
       "id": 91,
-      "name": "Jhol Momo Veggie (Hot Jhol or Cold Jhol)",
+      "name": "Jhol Momo Veggie (hot Jhol Or Cold Jhol)",
       "price": "$9.99",
-      "description": "Vegetable dumplings in soup broth",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Vegetable dumplings in soup broth"
     },
     {
       "id": 92,
       "name": "Steam Momo Chicken",
       "price": "$10.99",
-      "description": "Traditional steamed chicken dumplings",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Traditional steamed chicken dumplings"
     },
     {
       "id": 93,
-      "name": "Jhol Momo Chicken (Hot Jhol or Cold Jhol)",
+      "name": "Jhol Momo Chicken (hot Jhol Or Cold Jhol)",
       "price": "$10.99",
-      "description": "Chicken dumplings in soup broth",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Chicken dumplings in soup broth"
     },
     {
       "id": 94,
       "name": "Steam Beef Momo",
       "price": "$10.99",
-      "description": "Traditional steamed beef dumplings",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Traditional steamed beef dumplings"
     },
     {
       "id": 95,
-      "name": "Jhol Beef Momo (Hot Jhol or Cold Jhol)",
+      "name": "Jhol Beef Momo (hot Jhol Or Cold Jhol)",
       "price": "$10.99",
-      "description": "Beef dumplings in soup broth",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Beef dumplings in soup broth"
     },
     {
       "id": 96,
       "name": "Fried Momo Veggie",
       "price": "$10.00",
-      "description": "Crispy fried vegetable dumplings",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+      "description": "Crispy fried vegetable dumplings"
     },
     {
       "id": 97,
       "name": "Fried Momo Chicken",
       "price": "$10.99",
-      "description": "Crispy fried chicken dumplings",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+      "description": "Crispy fried chicken dumplings"
     },
     {
       "id": 98,
       "name": "Fried Momo Beef",
       "price": "$10.99",
-      "description": "Crispy fried beef dumplings",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop"
+      "description": "Crispy fried beef dumplings"
     },
     {
       "id": 99,
-      "name": "Manaslu Smoked C-Momo Veggie",
+      "name": "Manaslu Smoked C-momo Veggie",
       "price": "$10.99",
-      "description": "Our signature smoked vegetable dumplings",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Our signature smoked vegetable dumplings"
     },
     {
       "id": 100,
-      "name": "Manaslu Smoked C-Momo Beef, Chicken (Specials)",
+      "name": "Manaslu Smoked C-momo Beef, Chicken (specials)",
       "price": "$11.99",
-      "description": "Our signature smoked meat dumplings - special recipe",
-      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300&fit=crop"
+      "description": "Our signature smoked meat dumplings - special recipe"
     }
   ],
   "chowmein": [
@@ -730,36 +628,31 @@
       "id": 101,
       "name": "Chowmein Veggie",
       "price": "$8.99",
-      "description": "cabbage, carrot, pepper, spinach",
-      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+      "description": "Cabbage, carrot, pepper, spinach"
     },
     {
       "id": 102,
       "name": "Chowmein Chicken",
       "price": "$9.99",
-      "description": "cabbage, carrot, pepper, thinly sliced chicken",
-      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+      "description": "Cabbage, carrot, pepper, thinly sliced chicken"
     },
     {
       "id": 103,
       "name": "Chowmein Beef",
       "price": "$10.99",
-      "description": "cabbage, carrot, pepper, thinly sliced beef",
-      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+      "description": "Cabbage, carrot, pepper, thinly sliced beef"
     },
     {
       "id": 104,
       "name": "Chowmein Egg",
       "price": "$9.99",
-      "description": "cabbage, carrot, pepper, spinach, fried eggs",
-      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+      "description": "Cabbage, carrot, pepper, spinach, fried eggs"
     },
     {
       "id": 105,
       "name": "Chowmein Mixed",
       "price": "$11.99",
-      "description": "choice of meat, cabbage, carrot, pepper, mushroom, fried eggs",
-      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop"
+      "description": "Choice of meat, cabbage, carrot, pepper, mushroom, fried eggs"
     }
   ]
 }

@@ -3,12 +3,10 @@ import menuData from '../data/menuData.json';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('drinks');
-  const [selectedItem, setSelectedItem] = useState(null);
 
   const categories = [
     { key: 'drinks', label: 'Drinks' },
     { key: 'special_soup', label: 'Special Soup' },
-    { key: 'breads', label: 'Breads' },
     { key: 'breakfast_set', label: 'Breakfast Set' },
     { key: 'non_veg_appetizers', label: 'Non-Veg Appetizers' },
     { key: 'veggie_appetizers', label: 'Veggie Appetizers' },
@@ -30,30 +28,6 @@ const Menu = () => {
     setActiveCategory(categoryKey);
   }, []);
 
-  const handleItemClick = useCallback((item) => {
-    setSelectedItem(item);
-  }, []);
-
-  const closeModal = useCallback(() => {
-    setSelectedItem(null);
-    // Re-enable body scrolling
-    document.body.style.overflow = 'unset';
-  }, []);
-
-  // Prevent background scrolling when modal is open
-  React.useEffect(() => {
-    if (selectedItem) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    
-    // Cleanup on unmount
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [selectedItem]);
-
   return (
     <section id="menu" className="py-16 px-4" style={{ backgroundColor: '#4b2c2c' }} aria-labelledby="menu-heading">
       <div className="max-w-7xl mx-auto">
@@ -69,23 +43,25 @@ const Menu = () => {
 
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.key}
-              onClick={() => handleCategoryChange(category.key)}
-              className={`px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-all duration-300 text-sm sm:text-base ${
-                activeCategory === category.key
-                  ? 'bg-yellow-600 text-white shadow-lg scale-105'
-                  : 'bg-yellow-100 text-yellow-800 hover:bg-yellow-200 hover:text-yellow-900 shadow-md hover:shadow-lg'
-              }`}
-              style={{ fontFamily: 'Georgia, serif' }}
-              aria-pressed={activeCategory === category.key}
-              aria-label={`Filter by ${category.label}`}
-            >
-              {category.label}
-            </button>
-          ))}
+        <div className="overflow-x-auto pb-2 mb-6 sm:mb-8 md:mb-12 -mx-4 px-4 sm:mx-0 sm:px-0">
+          <div className="flex flex-nowrap gap-2 sm:gap-3 md:gap-4 justify-start sm:justify-center min-w-max sm:min-w-0">
+            {categories.map((category) => (
+              <button
+                key={category.key}
+                onClick={() => handleCategoryChange(category.key)}
+                className={`px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-lg font-medium transition-all duration-300 text-xs sm:text-sm md:text-base whitespace-nowrap touch-manipulation min-h-[40px] sm:min-h-[44px] ${
+                  activeCategory === category.key
+                    ? 'bg-yellow-600 text-white shadow-lg scale-105'
+                    : 'bg-yellow-100 text-yellow-800 active:bg-yellow-200 hover:bg-yellow-200 hover:text-yellow-900 shadow-md hover:shadow-lg'
+                }`}
+                style={{ fontFamily: 'Georgia, serif' }}
+                aria-pressed={activeCategory === category.key}
+                aria-label={`Filter by ${category.label}`}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Special Title for Authentic Nepali Food */}
@@ -102,24 +78,23 @@ const Menu = () => {
 
 
         {/* Menu Items Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {filteredMenu.length > 0 ? (
             filteredMenu.map((item) => (
               <div
                 key={item.id}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-4 md:p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2 cursor-pointer group"
-                onClick={() => handleItemClick(item)}
+                className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-4 md:p-6 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 sm:hover:-translate-y-2 group min-h-[120px] sm:min-h-[140px]"
                 style={{ fontFamily: 'Georgia, serif' }}
               >
-                <h3 className="text-xs sm:text-sm md:text-lg lg:text-xl font-bold mb-1 sm:mb-2 md:mb-3 group-hover:text-yellow-300 transition-colors duration-300 leading-tight" style={{ color: '#f4d7a1' }}>
+                <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-2 sm:mb-2 md:mb-3 group-hover:text-yellow-300 transition-colors duration-300 leading-tight" style={{ color: '#f4d7a1' }}>
                   {item.name}
                 </h3>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mb-1 sm:mb-2 md:mb-3" style={{ color: '#f4d7a1' }}>
+                <p className="text-sm sm:text-base md:text-base lg:text-lg font-semibold mb-2 sm:mb-2 md:mb-3" style={{ color: '#f4d7a1' }}>
                   {item.price}
                 </p>
-                <div className="text-xs opacity-75 hidden sm:block" style={{ color: '#f4d7a1' }}>
-                  Tap to view image
-                </div>
+                <p className="text-xs sm:text-sm md:text-sm opacity-90 leading-relaxed line-clamp-3" style={{ color: '#f4d7a1' }}>
+                  {item.description}
+                </p>
               </div>
             ))
           ) : (
@@ -157,50 +132,6 @@ const Menu = () => {
           </button>
         </div>
 
-        {/* Image Modal */}
-        {selectedItem && (
-          <div 
-            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-2 sm:p-4"
-            onClick={closeModal}
-          >
-            <div className="relative max-w-5xl max-h-full w-full">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  closeModal();
-                }}
-                className="absolute -top-8 sm:-top-12 right-0 text-white hover:text-yellow-300 text-3xl sm:text-4xl font-bold transition-colors duration-200 z-10 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:bg-black/20"
-                aria-label="Close modal"
-              >
-                ×
-              </button>
-              <div className="relative">
-                <img
-                  src={selectedItem.image}
-                  alt={`${selectedItem.name} - ${selectedItem.description}`}
-                  className="w-full h-auto object-contain rounded-lg"
-                  style={{ 
-                    maxWidth: '90vw', 
-                    maxHeight: '80vh',
-                    width: 'auto',
-                    height: 'auto'
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-3 sm:p-4 rounded-b-lg">
-                  <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2" style={{ fontFamily: 'Georgia, serif' }}>
-                    {selectedItem.name}
-                  </h3>
-                  <p className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">
-                    {selectedItem.price}
-                  </p>
-                  <p className="text-xs sm:text-sm opacity-90 leading-relaxed">
-                    {selectedItem.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

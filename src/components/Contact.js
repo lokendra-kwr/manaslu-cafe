@@ -9,8 +9,8 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="text-responsive-base text-gray-600 max-w-3xl mx-auto">
-            Come & have a great meal with us! We're located in Woodside, Queens, 
-            New York, and we'd love to welcome you to our peaceful cafe. 
+            Come & have a great meal with us! We're located at 3906 1/2 64th St, Woodside, NY 11377, United States, 
+            and we'd love to welcome you to our peaceful cafe. 
             Walk-ins are always welcome!
           </p>
         </div>
@@ -35,9 +35,7 @@ const Contact = () => {
                     <h4 className="text-base sm:text-lg font-semibold text-cafe-brown mb-1 sm:mb-2">Address</h4>
                     <p className="text-sm sm:text-base text-gray-600">
                       Manaslu Cafe<br />
-                      3906-64st Woodside<br />
-                      Woodside, NY 11377<br />
-                      United States
+                      3906 1/2 64th St, Woodside, NY 11377, United States
                     </p>
                   </div>
                 </div>
@@ -75,9 +73,9 @@ const Contact = () => {
                   <div>
                     <h4 className="text-base sm:text-lg font-semibold text-cafe-brown mb-1 sm:mb-2">Hours</h4>
                     <div className="text-sm sm:text-base text-gray-600 space-y-1">
-                      <p><strong>Monday - Friday:</strong> 7:00am – 10:00pm</p>
-                      <p><strong>Saturday:</strong> 8:00am – 10:30pm</p>
-                      <p><strong>Sunday:</strong> 7:00am – 10:00pm</p>
+                      <p><strong>Monday - Saturday:</strong> 8:00am – 10:00pm</p>
+                      
+                      <p><strong>Sunday:</strong> 8:00am – 10:00pm</p>
                     </div>
                   </div>
                 </div>
@@ -90,7 +88,7 @@ const Contact = () => {
             <h3 className="text-xl sm:text-2xl font-bold text-cafe-brown mb-4 sm:mb-6 font-serif">
               Find Us
             </h3>
-            <div className="relative h-48 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden">
+            <div className="relative h-64 sm:h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.0911409096045!2d-73.90035088635268!3d40.74613567997584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fc30e6f9aeb%3A0x4aab272435307ec7!2sManaslu%20Cafe!5e1!3m2!1sen!2snp!4v1758079147490!5m2!1sen!2snp"
                 width="100%"
@@ -100,11 +98,11 @@ const Contact = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Manaslu Cafe Location Map"
-                aria-label="Interactive map showing Manaslu Cafe location in Woodside, Queens, New York"
+                aria-label="Interactive map showing Manaslu Cafe location at 3906 1/2 64th St, Woodside, NY 11377, United States"
               ></iframe>
             </div>
             <p className="text-xs sm:text-sm text-gray-600 mt-3 sm:mt-4 text-center">
-              Located in Woodside, Queens, New York - the most peaceful cafe in the area. 
+              Located at 3906 1/2 64th St, Woodside, NY 11377, United States - the most peaceful cafe in the area. 
               No reservations needed, just walk in!
             </p>
           </div>

@@ -4,57 +4,45 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=400&fit=crop',
-      alt: 'Cafe Interior',
-      title: 'Cozy Interior'
+      src: '/gallery/571132929_122108474445038171_3670871302657541012_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=400&fit=crop',
-      alt: 'Fresh Breakfast',
-      title: 'Fresh Breakfast'
+      src: '/gallery/574258719_122109123339038171_3290358051004704056_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&h=400&fit=crop',
-      alt: 'Outdoor Seating',
-      title: 'Garden Seating'
+      src: '/gallery/574968250_122108302869038171_7583787411854774792_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600&h=400&fit=crop',
-      alt: 'Coffee Bar',
-      title: 'Coffee Bar'
+      src: '/gallery/571128305_122107969251038171_6063496552170724352_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     },
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop',
-      alt: 'Delicious Food',
-      title: 'Delicious Meals'
+      src: '/gallery/571122790_122107967079038171_2319699358846950803_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1551782450-17144efb9c50?w=600&h=400&fit=crop',
-      alt: 'Kitchen',
-      title: 'Our Kitchen'
+      src: '/gallery/571740022_122107967013038171_18122622273851016_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     },
     {
       id: 7,
-      src: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop',
-      alt: 'Coffee Preparation',
-      title: 'Coffee Preparation'
-    },
-    {
-      id: 8,
-      src: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=400&fit=crop',
-      alt: 'Dining Area',
-      title: 'Dining Area'
-    },
-    {
-      id: 9,
-      src: 'https://images.unsplash.com/photo-1561047029-3000c68339ca?w=600&h=400&fit=crop',
-      alt: 'Fresh Ingredients',
-      title: 'Fresh Ingredients'
+      src: '/gallery/571118800_122107781931038171_2509560862458000179_n.jpg',
+      alt: 'Manaslu Cafe Gallery',
+      title: 'Manaslu Cafe'
     }
   ];
 
@@ -67,7 +55,7 @@ const Gallery = () => {
           </h2>
           <p className="text-responsive-base text-gray-600 max-w-3xl mx-auto">
             Take a look at our beautiful cafe, delicious food, and the warm atmosphere 
-            that makes Manaslu Cafe the most peaceful cafe in Kathmandu.
+            that makes Manaslu Cafe the most peaceful cafe in Woodside, Queens.
           </p>
         </div>
 
@@ -81,7 +69,7 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-48 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-56 sm:h-64 md:h-72 object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
